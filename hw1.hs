@@ -22,3 +22,7 @@ validate :: (Integral a) => a -> Bool
 validate x
   | rem x 10 == 0 = True
   | otherwise = False
+
+type Peg = String
+
+type Move = (Peg, Peg)
